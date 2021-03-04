@@ -17,7 +17,7 @@ exports.loop = async function (client, files, method) {
 		await client.query('START TRANSACTION;');
 
 		for (const obj of files) {
-			const file = await import(obj.abs); // changed this line
+			const file = await import('file:///' + obj.abs); // changed this line
 			if (typeof file[method] === 'function') {
 				await Promise.resolve(file[method](client)).catch(err => {
 					throw new MigrationError(err, obj);
