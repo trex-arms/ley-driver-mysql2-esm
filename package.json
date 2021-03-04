@@ -1,6 +1,6 @@
 {
   "name": "@trex-arms/ley-driver-mysql2-esm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ESM-compatible mysql2 driver for @lukeed/ley",
   "main": "index.js",
   "scripts": {
