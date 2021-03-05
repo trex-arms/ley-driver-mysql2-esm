@@ -34,10 +34,11 @@ export const down = async client => {
 ### how?
 
 ```sh
-npm install mysql2 --save
+npm install ley --save    # if not installed yet
+npm install mysql2 --save # if not installed yet
 npm install @trex-arms/ley-driver-mysql2-esm --save
 ```
-> **Important:** `mysql2` must be installed separately. That way, you control which version you want to use.
+> **Important:** `ley` and `mysql2` must be installed separately. That way, you control which versions you want to use.
 
 ----------
 
